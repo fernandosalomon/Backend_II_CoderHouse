@@ -1,3 +1,47 @@
-<h1>
-  Home
-</h1>
+<header class="navbar">
+  <div class="logo"><img src="/img/logo.png" style="width: 36px;" />
+    <p class="m-0 p-0 ms-2">NoteSecure</p></div>
+  <nav>
+    <a href="/login">Login</a>
+    <a href="/register" class="btn">Register</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Tus notas, siempre privadas</h1>
+    <p>
+      Sistema seguro de gestión de notas con autenticación híbrida, JWT y OAuth
+      integrado.
+    </p>
+    <div class="actions">
+      <a href="/register" class="btn primary">Empezar</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="card">
+      <h3>🔑 Autenticación Híbrida</h3>
+      <p>Login local + OAuth (Google/GitHub) usando Passport.</p>
+    </div>
+
+    <div class="card">
+      <h3>🛡️ Seguridad</h3>
+      <p>JWT, cookies httpOnly y protección contra CSRF.</p>
+    </div>
+
+    <div class="card">
+      <h3>📦 Arquitectura</h3>
+      <p>Estructura modular por capas lista para escalar.</p>
+    </div>
+
+    <div class="card">
+      <h3>⚡ API REST</h3>
+      <p>Endpoints protegidos con control de acceso por roles.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 NoteSecure</p>
+</footer>

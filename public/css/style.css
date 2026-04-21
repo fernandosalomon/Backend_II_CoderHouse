@@ -63,3 +63,107 @@ body {
   font-size: 0.7rem;
   color: #3c4554;
 }
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #21262d;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #e6edf3;
+}
+
+/* Botones */
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  border-color: #58a6ff;
+}
+
+.primary {
+  background: linear-gradient(90deg, #3fb950, #58a6ff);
+  color: #0d1117;
+  border: none;
+}
+
+.secondary {
+  background: transparent;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #8b949e;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.actions a {
+  margin: 10px;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 60px 40px;
+}
+
+.card {
+  background-color: #161b22;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #21262d;
+  transition: 0.2s;
+}
+
+.card:hover {
+  border-color: #58a6ff;
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #8b949e;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #21262d;
+  color: #8b949e;
+}

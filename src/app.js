@@ -2,6 +2,7 @@ import express from "express";
 import handlebars from "express-handlebars";
 import path from "path";
 import { __dirname } from "./utils.js";
+import viewsRouter from "./routes/views.routes.js";
 
 const app = express();
 const SERVER_PORT = 8080;
@@ -13,13 +14,7 @@ app.engine("handlebars", handlebars.engine());
 app.set("view engine", "handlebars");
 app.set("views", path.join(__dirname, "./views"));
 
-app.get("/login", (req, res) => {
-  res.render("login");
-});
-
-app.get("/register", (req, res) => {
-  res.render("register");
-});
+app.use("/", viewsRouter);
 
 app.listen(SERVER_PORT, () => {
   console.log(`Server running on port ${SERVER_PORT}`);
