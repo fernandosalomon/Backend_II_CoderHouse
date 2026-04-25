@@ -12,9 +12,14 @@
   "type": "module",
   "dependencies": {
     "bcryptjs": "^3.0.3",
+    "connect-mongo": "^6.0.0",
+    "cookie-parser": "^1.4.7",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "express-handlebars": "^8.0.1",
-    "moongose": "^1.0.0"
+    "express-session": "^1.19.0",
+    "mongoose": "^8.23.1",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
   }
 }
